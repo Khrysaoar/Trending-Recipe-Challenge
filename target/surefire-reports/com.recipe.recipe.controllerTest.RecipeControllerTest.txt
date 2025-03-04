@@ -1,0 +1,43 @@
+-------------------------------------------------------------------------------
+Test set: com.recipe.recipe.controllerTest.RecipeControllerTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.009 s <<< FAILURE! -- in com.recipe.recipe.controllerTest.RecipeControllerTest
+com.recipe.recipe.controllerTest.RecipeControllerTest.testGetTrendingRecipes -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "bean" is null
+	at org.springframework.test.web.servlet.setup.StubWebApplicationContext.addBeans(StubWebApplicationContext.java:150)
+	at org.springframework.test.web.servlet.setup.StandaloneMockMvcBuilder.registerMvcSingletons(StandaloneMockMvcBuilder.java:401)
+	at org.springframework.test.web.servlet.setup.StandaloneMockMvcBuilder.initWebAppContext(StandaloneMockMvcBuilder.java:390)
+	at org.springframework.test.web.servlet.setup.AbstractMockMvcBuilder.build(AbstractMockMvcBuilder.java:171)
+	at com.recipe.recipe.controllerTest.RecipeControllerTest.<init>(RecipeControllerTests.java:34)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
+com.recipe.recipe.controllerTest.RecipeControllerTest.testGetTrendingRecipesByDifficulty_Success -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "bean" is null
+	at org.springframework.test.web.servlet.setup.StubWebApplicationContext.addBeans(StubWebApplicationContext.java:150)
+	at org.springframework.test.web.servlet.setup.StandaloneMockMvcBuilder.registerMvcSingletons(StandaloneMockMvcBuilder.java:401)
+	at org.springframework.test.web.servlet.setup.StandaloneMockMvcBuilder.initWebAppContext(StandaloneMockMvcBuilder.java:390)
+	at org.springframework.test.web.servlet.setup.AbstractMockMvcBuilder.build(AbstractMockMvcBuilder.java:171)
+	at com.recipe.recipe.controllerTest.RecipeControllerTest.<init>(RecipeControllerTests.java:34)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
+com.recipe.recipe.controllerTest.RecipeControllerTest.testGetTrendingRecipesByDifficulty_MissingParam -- Time elapsed: 0 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "bean" is null
+	at org.springframework.test.web.servlet.setup.StubWebApplicationContext.addBeans(StubWebApplicationContext.java:150)
+	at org.springframework.test.web.servlet.setup.StandaloneMockMvcBuilder.registerMvcSingletons(StandaloneMockMvcBuilder.java:401)
+	at org.springframework.test.web.servlet.setup.StandaloneMockMvcBuilder.initWebAppContext(StandaloneMockMvcBuilder.java:390)
+	at org.springframework.test.web.servlet.setup.AbstractMockMvcBuilder.build(AbstractMockMvcBuilder.java:171)
+	at com.recipe.recipe.controllerTest.RecipeControllerTest.<init>(RecipeControllerTests.java:34)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+

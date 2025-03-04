@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "739ab254-ae04-487f-be49-cd6ab37448d9",
+		"name": "Trending Recipes API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38934181"
+	},
+	"item": [
+		{
+			"name": "/api/recipes/trending",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "/api/recipes/trending/filter?difficulty=easy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response is JSON\", function () {",
+							"    pm.response.to.have.header(\"Content-Type\", \"application/json\");",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/recipes/trending/filter?difficulty=easy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"recipes",
+						"trending",
+						"filter"
+					],
+					"query": [
+						{
+							"key": "difficulty",
+							"value": "easy"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/recipes/trending/filter",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status is 400\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"",
+							"pm.test(\"Response is Text\", function () {",
+							"    pm.response.to.have.header(\"Content-Type\", \"text/plain;charset=UTF-8\");",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/recipes/trending/filter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"recipes",
+						"trending",
+						"filter"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
