@@ -20,7 +20,19 @@ This is a Java Spring Boot application that provides two RESTful API endpoints f
     "name": "Cheeseburger",
     "difficulty": "easy",
     "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
-  }...
+  },
+  {
+    "position": 2,
+    "name": "Wagyu Burger",
+    "difficulty": "medium",
+    "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+  },
+  {
+    "position": 3,
+    "name": "Vegan Burger",
+    "difficulty": "hard",
+    "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+  }
 ]
 ```
 
@@ -34,18 +46,6 @@ This is a Java Spring Boot application that provides two RESTful API endpoints f
     "id": 1,
     "name": "Cheeseburger",
     "difficulty": "easy",
-    "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
-  },
-  {
-    "position": 2,
-    "name": "Wagyu Burger",
-    "difficulty": "medium",
-    "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
-  },
-  {
-    "position": 3,
-    "name": "Vegan Burger",
-    "difficulty": "hard",
     "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
   }
 ]
