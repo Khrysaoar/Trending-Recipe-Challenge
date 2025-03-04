@@ -63,8 +63,8 @@ This is a Java Spring Boot application that provides two RESTful API endpoints f
 ## Installation & Setup
 1. **Clone the repository:**
 ```sh
-git clone <repository-url>
-cd trending-recipes-api
+git clone https://github.com/Khrysaoar/Trending-Recipe-Challenge.git
+cd Trending-Recipe-Challenge
 ```
 
 2. **Build the application:**
